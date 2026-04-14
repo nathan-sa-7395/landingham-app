@@ -1,6 +1,6 @@
 "use client";
 
-const OPTIONS = ["Billboard", "Local TV", "Digital", "Radio"];
+const OPTIONS = ["Billboard", "Local TV", "Digital (AI Videos)", "Radio"];
 
 interface Props {
   value: string[];
