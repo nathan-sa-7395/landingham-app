@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { QuizFunnel } from "@/components/quiz/QuizFunnel";
 
 export default function HomePage() {
@@ -7,16 +6,11 @@ export default function HomePage() {
       {/* Ambient glow */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-[420px] bg-gradient-to-b from-cyan-500/10 via-transparent to-transparent blur-2xl" />
 
-      {/* Top-left logo */}
+      {/* Top-left wordmark */}
       <div className="relative px-6 pt-5">
-        <Image
-          src="/logo-light.png"
-          alt="Last Minute Media Deals"
-          width={120}
-          height={36}
-          priority
-          className="h-auto w-28"
-        />
+        <span className="text-sm font-semibold tracking-wide text-zinc-100">
+          Landingham &amp; Winningmore
+        </span>
       </div>
 
       <div className="relative mx-auto max-w-5xl px-6 pb-20 pt-10 sm:pt-14">

@@ -2,7 +2,6 @@
 
 import { useMutation, useQuery } from "convex/react";
 import { useClerk } from "@clerk/nextjs";
-import Image from "next/image";
 import { api } from "@/convex/_generated/api";
 import type { Doc, Id } from "@/convex/_generated/dataModel";
 import {
@@ -53,13 +52,9 @@ export function AdminDashboard({ email }: { email: string }) {
     <div className="flex min-h-screen flex-col p-6 sm:p-8">
       <header className="mb-6 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <Image
-            src="/logo-light.png"
-            alt="Last Minute Media Deals"
-            width={160}
-            height={48}
-            className="h-auto w-36"
-          />
+          <span className="text-sm font-semibold tracking-wide text-zinc-100">
+            Landingham &amp; Winningmore
+          </span>
           <div className="hidden h-8 w-px bg-zinc-800 sm:block" />
           <p className="hidden text-sm text-zinc-400 sm:block">
             Signed in as <span className="text-cyan-300">{email}</span>

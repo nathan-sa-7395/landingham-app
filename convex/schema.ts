@@ -2,7 +2,7 @@ import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
 
 /**
- * Convex schema for Last Minute Media Deals.
+ * Convex schema for Landingham & Winningmore.
  * Auth is handled by Clerk — only leads data lives here.
  */
 export default defineSchema({

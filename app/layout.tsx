@@ -5,7 +5,7 @@ import { ConvexClientProvider } from "@/lib/convexClient";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Last Minute Media Deals",
+  title: "Landingham & Winningmore",
   description: "Media buying that moves at your speed.",
 };
 
