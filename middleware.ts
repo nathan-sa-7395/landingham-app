@@ -1,10 +1,11 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
-// Protect everything under /admin except the login page itself.
-const isProtectedRoute = createRouteMatcher(["/admin((?!/login).)*"]);
+// Everything is public except /admin and anything nested under it
+// (the login page at /admin/login is explicitly kept public).
+const isPublicRoute = createRouteMatcher(["/", "/admin/login"]);
 
 export default clerkMiddleware(async (auth, req) => {
-  if (isProtectedRoute(req)) {
+  if (!isPublicRoute(req)) {
     await auth.protect();
   }
 });
