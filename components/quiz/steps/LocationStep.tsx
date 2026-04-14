@@ -20,7 +20,7 @@ export function LocationStep({ value, onChange }: Props) {
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder="e.g. Dallas, TX"
-        className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-zinc-100 placeholder-zinc-600 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30"
+        className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-zinc-100 placeholder-zinc-600 outline-none transition focus:border-violet-400 focus:ring-2 focus:ring-violet-500/30"
       />
     </div>
   );

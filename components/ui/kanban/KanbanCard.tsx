@@ -30,8 +30,8 @@ export function KanbanCard<TMeta>({
           {...provided.draggableProps}
           {...provided.dragHandleProps}
           onClick={onClick}
-          className={`cursor-pointer rounded-xl border border-zinc-800 bg-zinc-900/80 p-3 text-sm text-zinc-100 shadow-sm transition hover:border-cyan-500/40 hover:shadow-neon ${
-            snapshot.isDragging ? "ring-2 ring-cyan-400/60" : ""
+          className={`cursor-pointer rounded-xl border border-zinc-800 bg-zinc-900/80 p-3 text-sm text-zinc-100 shadow-sm transition hover:border-violet-500/40 hover:shadow-neon ${
+            snapshot.isDragging ? "ring-2 ring-violet-400/60" : ""
           }`}
         >
           {renderCard ? (

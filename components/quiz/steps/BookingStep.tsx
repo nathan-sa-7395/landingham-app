@@ -31,21 +31,21 @@ export function BookingStep({ data, update }: Props) {
           placeholder="Full name"
           value={data.fullName}
           onChange={(e) => update("fullName", e.target.value)}
-          className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-zinc-100 placeholder-zinc-600 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30"
+          className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-zinc-100 placeholder-zinc-600 outline-none transition focus:border-violet-400 focus:ring-2 focus:ring-violet-500/30"
         />
         <input
           type="email"
           placeholder="Email address"
           value={data.email}
           onChange={(e) => update("email", e.target.value)}
-          className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-zinc-100 placeholder-zinc-600 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30"
+          className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-zinc-100 placeholder-zinc-600 outline-none transition focus:border-violet-400 focus:ring-2 focus:ring-violet-500/30"
         />
         <input
           type="tel"
           placeholder="Phone number"
           value={data.phone}
           onChange={(e) => update("phone", e.target.value)}
-          className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-zinc-100 placeholder-zinc-600 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30"
+          className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-zinc-100 placeholder-zinc-600 outline-none transition focus:border-violet-400 focus:ring-2 focus:ring-violet-500/30"
         />
       </div>
     </div>

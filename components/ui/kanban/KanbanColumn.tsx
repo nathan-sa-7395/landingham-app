@@ -30,7 +30,7 @@ export function KanbanColumn<TMeta>({
         <div className="flex items-center gap-2">
           <span
             className="h-2 w-2 rounded-full"
-            style={{ backgroundColor: column.accentColor ?? "#22d3ee" }}
+            style={{ backgroundColor: column.accentColor ?? "#a78bfa" }}
           />
           <h3 className="text-sm font-semibold uppercase tracking-wider text-zinc-200">
             {column.title}
@@ -45,7 +45,7 @@ export function KanbanColumn<TMeta>({
             ref={provided.innerRef}
             {...provided.droppableProps}
             className={`flex flex-1 flex-col gap-2 p-3 transition ${
-              snapshot.isDraggingOver ? "bg-cyan-500/5" : ""
+              snapshot.isDraggingOver ? "bg-violet-500/5" : ""
             }`}
           >
             {items.length === 0 && (

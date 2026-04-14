@@ -23,9 +23,9 @@ type Lead = Doc<"leads">;
 // Column definitions — edit this array to reshape the board for a
 // different client. Column ids are stored as `status` on each lead.
 const COLUMNS: KanbanColumnDef[] = [
-  { id: "new", title: "New Lead", accentColor: "#22d3ee" },
-  { id: "contacted", title: "Contacted", accentColor: "#38bdf8" },
-  { id: "proposal", title: "Proposal Sent", accentColor: "#a78bfa" },
+  { id: "new", title: "New Lead", accentColor: "#a78bfa" },
+  { id: "contacted", title: "Contacted", accentColor: "#818cf8" },
+  { id: "proposal", title: "Proposal Sent", accentColor: "#c084fc" },
   { id: "won", title: "Closed Won", accentColor: "#34d399" },
   { id: "lost", title: "Closed Lost", accentColor: "#f87171" },
 ];
@@ -57,12 +57,12 @@ export function AdminDashboard({ email }: { email: string }) {
           </span>
           <div className="hidden h-8 w-px bg-zinc-800 sm:block" />
           <p className="hidden text-sm text-zinc-400 sm:block">
-            Signed in as <span className="text-cyan-300">{email}</span>
+            Signed in as <span className="text-violet-300">{email}</span>
           </p>
         </div>
         <button
           onClick={logout}
-          className="rounded-lg border border-zinc-800 px-4 py-2 text-sm text-zinc-300 transition hover:border-cyan-500/40 hover:text-cyan-200"
+          className="rounded-lg border border-zinc-800 px-4 py-2 text-sm text-zinc-300 transition hover:border-violet-500/40 hover:text-violet-200"
         >
           Log out
         </button>

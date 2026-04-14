@@ -26,17 +26,17 @@ export function CadenceStep({ value, onChange }: Props) {
               onClick={() => onChange(opt)}
               className={`flex w-full items-center justify-between rounded-xl border px-4 py-3 text-left transition ${
                 checked
-                  ? "border-cyan-400 bg-cyan-500/10 text-cyan-200 shadow-neon"
-                  : "border-zinc-800 text-zinc-200 hover:border-cyan-500/40"
+                  ? "border-violet-400 bg-violet-500/10 text-violet-200 shadow-neon"
+                  : "border-zinc-800 text-zinc-200 hover:border-violet-500/40"
               }`}
             >
               <span>{opt}</span>
               <span
                 className={`flex h-5 w-5 items-center justify-center rounded-full border ${
-                  checked ? "border-cyan-300" : "border-zinc-700"
+                  checked ? "border-violet-300" : "border-zinc-700"
                 }`}
               >
-                {checked && <span className="h-2.5 w-2.5 rounded-full bg-cyan-400" />}
+                {checked && <span className="h-2.5 w-2.5 rounded-full bg-violet-400" />}
               </span>
             </button>
           );

@@ -115,7 +115,7 @@ export function Calendar({ value, onChange }: CalendarProps) {
                 isPast
                   ? "cursor-not-allowed text-zinc-700"
                   : isSelected
-                    ? "bg-cyan-500 font-semibold text-zinc-950 shadow-neon"
+                    ? "bg-violet-500 font-semibold text-zinc-950 shadow-neon"
                     : "text-zinc-200 hover:bg-zinc-800"
               }`}
             >
@@ -144,8 +144,8 @@ export function Calendar({ value, onChange }: CalendarProps) {
                   onClick={() => onChange(ts)}
                   className={`rounded-lg border px-3 py-2 text-xs transition ${
                     selected
-                      ? "border-cyan-400 bg-cyan-500/20 text-cyan-200"
-                      : "border-zinc-800 text-zinc-300 hover:border-cyan-500/40"
+                      ? "border-violet-400 bg-violet-500/20 text-violet-200"
+                      : "border-zinc-800 text-zinc-300 hover:border-violet-500/40"
                   }`}
                 >
                   {slot.label}

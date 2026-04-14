@@ -106,7 +106,7 @@ export function QuizFunnel() {
     return (
       <div className="mx-auto max-w-lg rounded-3xl border border-zinc-800 bg-zinc-950/80 p-10 text-center shadow-neon">
         <div className="mb-4 text-5xl">✨</div>
-        <h2 className="mb-2 text-2xl font-semibold text-cyan-300">
+        <h2 className="mb-2 text-2xl font-semibold text-violet-300">
           Thanks — we'll be in touch!
         </h2>
         <p className="text-sm text-zinc-400">
@@ -171,7 +171,7 @@ export function QuizFunnel() {
             type="button"
             onClick={next}
             disabled={!canProceed()}
-            className="rounded-lg bg-cyan-500 px-6 py-2 text-sm font-semibold text-zinc-950 shadow-neon transition hover:bg-cyan-400 disabled:cursor-not-allowed disabled:opacity-40"
+            className="rounded-lg bg-violet-500 px-6 py-2 text-sm font-semibold text-zinc-950 shadow-neon transition hover:bg-violet-400 disabled:cursor-not-allowed disabled:opacity-40"
           >
             Continue →
           </button>
@@ -180,7 +180,7 @@ export function QuizFunnel() {
             type="button"
             onClick={submit}
             disabled={!canProceed() || submitting}
-            className="rounded-lg bg-cyan-500 px-6 py-2 text-sm font-semibold text-zinc-950 shadow-neon transition hover:bg-cyan-400 disabled:cursor-not-allowed disabled:opacity-40"
+            className="rounded-lg bg-violet-500 px-6 py-2 text-sm font-semibold text-zinc-950 shadow-neon transition hover:bg-violet-400 disabled:cursor-not-allowed disabled:opacity-40"
           >
             {submitting ? "Submitting…" : "Book my call"}
           </button>

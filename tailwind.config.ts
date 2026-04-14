@@ -9,15 +9,15 @@ const config: Config = {
     extend: {
       colors: {
         neon: {
-          DEFAULT: "#22d3ee", // cyan-400
-          glow: "#06b6d4",
+          DEFAULT: "#a78bfa", // violet-400
+          glow: "#7c3aed",
         },
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        neon: "0 0 24px rgba(34, 211, 238, 0.35)",
+        neon: "0 0 24px rgba(167, 139, 250, 0.35)",
       },
     },
   },

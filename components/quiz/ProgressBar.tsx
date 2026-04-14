@@ -17,7 +17,7 @@ export function ProgressBar({ current, total }: ProgressBarProps) {
       </div>
       <div className="h-1.5 w-full overflow-hidden rounded-full bg-zinc-800">
         <div
-          className="h-full rounded-full bg-gradient-to-r from-cyan-500 to-cyan-300 transition-all duration-500"
+          className="h-full rounded-full bg-gradient-to-r from-violet-500 to-violet-300 transition-all duration-500"
           style={{ width: `${pct}%` }}
         />
       </div>
